@@ -1,0 +1,18 @@
+main{
+    grid-column: span 10/span 10;
+    color: black;
+    background-color: #FF8C76;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    /* grid-column-end: 13; */
+}
+
+main>*{
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    background: rgba( 255, 255, 255, 0.90 );
+    padding-left: 50px;
+    padding-right: 50px;
+}

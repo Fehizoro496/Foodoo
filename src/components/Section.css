@@ -1,0 +1,74 @@
+.section{
+    flex:1;
+    z-index: 10;
+    overflow-y: scroll;
+    /* padding-top: 50px; */
+}
+
+.section::-webkit-scrollbar{
+    display: none;
+}
+
+.head{
+    display: flex;
+    place-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.leading{
+    display:flex;
+}
+
+.leadingTxt{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+}
+
+.leadingTxtTitle,.actionTitle{
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Berkshire Swash', sans-serif;
+}
+
+.leadingTxtContent,.actionContent{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.sectionHeadActions{
+    display: flex;
+}
+
+.sectionHeadActionsChild:nth-Child(2){
+    border-left: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.sectionHeadActionsChild{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+    align-items: center;
+}
+
+.avatar{
+    width: 75px;
+    height: 75px;
+    background-color: #7dbfa2;
+    place-self: center;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.cardsWrapper{
+    gap: 2.5rem;
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}

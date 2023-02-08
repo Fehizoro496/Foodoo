@@ -1,0 +1,9 @@
+.container{
+    background-color: #00000055;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    width: 100vw;
+    height: 100vh;
+    gap: 0px;
+}

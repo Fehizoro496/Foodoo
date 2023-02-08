@@ -1,0 +1,116 @@
+.drawer{
+    grid-column: span 2/span 2;
+    height: 100vh;
+    background-color: white;
+    color:black;
+    display: grid ;
+    align-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.drawerHeader{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.appName{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.drawerAvatar{
+    display: grid;
+    align-self: center;
+    place-content:center;
+    width: 5rem;
+    height: 5rem;
+    background-color: orangered;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.identifiant{
+    font-weight: 300;
+    font-size: .7rem;
+    margin: .2rem;
+    color: slategrey;
+}
+
+.old{
+    display: flex;
+    align-items: center;
+    /* color: white; */
+    /* background-color: blue; */
+    gap: 5px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin: .2rem;
+    font-size: .8rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(140, 153, 166, 0.4);
+}
+
+.oldIco{
+    background-color: #e63232;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+/* .oldNumber{
+} */
+
+.drawerNav{
+    display: flex;
+    gap: .7rem;
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.ico{
+    background-color: #e63232;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.libelle{
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.drawerNav{
+    display: grid;
+    place-content: center;
+}
+
+.drawerFooter{
+    text-align: center;
+    font-size: .7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+span{
+    text-decoration: underline;
+}

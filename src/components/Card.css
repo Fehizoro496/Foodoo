@@ -1,0 +1,130 @@
+.card{
+    margin-top: 2.5rem;
+    position: relative;
+    background-color: white;
+    grid-column: span 1 / span 1;
+    border-radius: 10px;
+    display: grid;
+    /* text-align: center; */
+    align-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    transform: translateY(00px);
+    transition: transform .25s;
+}
+
+.cardAvatar{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: orangered;
+    transform: translate(-50%,-50%);
+
+}
+
+.cardContent{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipesName{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.recipesLevel{
+    font-size: .8rem;
+    background-color: rgba(0, 128, 0, .15);
+    color: rgba(0, 128, 0, 1);
+    font-weight: 500;
+    padding: .25rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: .5rem;
+    width: fit-content;
+}
+
+.recipesDetail{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    text-align: center;
+}
+
+.recipesDetail>*:nth-child(2),.recipesDetail>*:nth-child(3){
+    border-left: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.val{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.unit{
+    font-size: 0.7rem;
+    color: slategrey;
+}
+
+.Detail{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+.recipesRate{
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.cardAction{
+    font-size: .9rem;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    border-radius: 0 0 10px 10px;
+    border-top: rgba(128, 128, 128, 0.1) solid 1px;
+}
+
+.card:hover>.cardAction{
+    background-color: #e63232;
+    color: white; 
+    transition: color .25s ,background .5s;
+}
+
+.cardAction::after{
+    position: absolute;
+    content: ' ';
+    height: 15px;
+    width: 95%;
+    background-color: transparent;
+    top: 100%;
+    left:50%;
+    border-radius: 10px;
+    transform: translate(-50%,-100%);
+}
+
+.card:hover>.cardAction::after{
+    box-shadow: 0 8px 30px#e63232;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    transition: transform .25s;
+}
